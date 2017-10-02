@@ -1,20 +1,24 @@
 \task{Semi-Anonymous Questions}
-To learn from courses, it is important to participate and understand the discussed subjects. A common problem is student-student peer pressure, that is, students don't dare ask questions that may be percieved as `stupid'. Of course, most questions that students may have are not stupid and more importantly not limited to that student. Instead, it is often a result of the lecturer being vague, incorrect or omitting content.
+To learn from courses, it is important to participate and understand the discussed subjects. A common problem is student-student peer pressure, that is, students don't dare ask questions that may be percieved as `stupid'. Of course, most questions that students may have are not stupid and more importantly not limited to that student. Instead, it is often a result of the lecturer being vague, incorrect or omitting content, which is an issue that is most easily resolved directly in class.
+
+One proposed solution to this is to have a system wherein students post questions and the others vote for what they want to see answered. Then, the lecturer can either combine Q\&A with a break, or keep an eye on the top questions to handle them immediately as they show up. To solve the peer-pressure issue, the students are then anonymized, so that no single person can be blamed for `stupid' questions.
+
+However, there are also some adversarial scenarios linked to a service like this. If the lecturer has, for instance, given one of the participants a failing grade previously, said student may be inclined to leverage this anonymity to attack the lecturer. Or consider the scenario where students hold grudges against one another, then this anonymity could be leveraged to attack other students personally. You can certainly think of more issues than these, but optimally, they should all be solved before taken into production.
 
 Your task is to design a service for passing semi-anonymous questions to the lecturer. That means that the students should not be aware of who owns which question, while the lecturer should. Furthermore, it should be light-weight enough that an end-user can start using it with minimal previous knowledge of the system in no more than 5 minutes.
 
 \subsection*{Requirements}
 Apart from the general requirements, you must at least implement:
 \begin{itemize}
-	\item Centralized authentication
-	\item Lecturer front-end
-	\item Student front-end
-	\item A scalable back-end
+    \item A proper front-end interface for the students.
+	\item The lecturer view, where questions can be viewed.
+	\item Anonymous voting and question uploading.
+    \item Some interactive way to view proposed questions.
 \end{itemize}
-If you've got the time, after finishing the general requirements, you may want to continue with:
+If you've got time after finishing those requirements, you may want to continue with:
 \begin{itemize}
-	\item Gamifying the desing
-	\item Collecting and aggregating anonymous statistics
-	\item Implementing multiple authentication backends (CAS/LDAP/OAUTH/OpenID)
+    \item Making sure that the views are mobile-friendly.
+	\item Measuring motivators in the system and then gamifying the design.
+	\item Writing systems to collect and aggregate anonymous statistics.
 \end{itemize}
 

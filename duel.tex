@@ -1,10 +1,24 @@
 \task{Coding Duel}
 \begin{refsection}
-According to Bartle's Taxonomy\supercite{bartle}, there are four types of players: Hearts (socializers), clubs (slayers), diamonds (achievers) and spades (explorers). If one were to implement a game for encouraging students to study more it would take some clever design to actually reach all types. Instead, design a slayer-targeting game wherein multiple players fight it out by using code.
+According to Bartle's Taxonomy\supercite{bartle}, there are four types of players: Hearts (socializers), clubs (slayers), diamonds (achievers) and spades (explorers). If one were to implement a game for encouraging students to study more, it would take some clever design to actually reach all types. Instead, design a slayer-targeting game wherein multiple players fight it out by using code. The actual mechanics are left for you to decide, but the game should encompass 2--8 players, be based on coding and have players compete with other players.
 
-The language of the code and the format of the competition is left to you to decide, but it should obviously 
+For instance, one game could circle around code size, where the players receive a piece of documentation and are tasked with writing the smallest piece of code that satisfies the specification. Whenever a player wins a round they get a point and for every set of rounds won, they get some reward that they can use to upgrade their editor.
 
-Implement a multiplayer game for 2-8 players that is based on coding wherein the players duel.
+This assignment doesn't necessarily require great scalability per se, but the players should certainly be able to interact in real time. One could imagine that a startup would maintain the game while creating revenue from ads and donations, so there would be someone maintaining it daily.
+
+\subsection{Requirements}
+Apart from the regular requirements, your system should
+\begin{itemize}
+    \item Implement real-time communication through standard web components.
+    \item Engage players in head-to-head battles with their peers.
+\end{itemize}
+If for some reason you want to do more, you can
+\begin{itemize}
+    \item Separate client communications from the server.
+    \item Figure out ways to reach more types of players.
+\end{itemize}
+
+
 \printbibliography[heading=subbibliography]
 
 \end{refsection}
