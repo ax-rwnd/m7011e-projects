@@ -1,3 +1,22 @@
+# VIM
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+
+## Output file
+*.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

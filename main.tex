@@ -33,7 +33,7 @@
 \pagestyle{fancy}
 
 \pagenumbering{gobble}
-\newcommand{\task}[1]{\newpage\section{#1}}
+\newcommand{\task}[1]{\newpage\section{#1}\label{task:#1}}
 \renewcommand{\abstractname}{Summary}
 
 
@@ -60,9 +60,11 @@
 \end{titlepage}
 
 \input{duel.tex}
-\input{questions.tex}
+\input{interprog.tex}
 \input{explorer.tex}
-\input{recourse.tex}
+\input{bughunter.tex}
+\input{questions.tex}
+\input{courseoverflow.tex}
 \input{luttis.tex}
 
 \end{document}

@@ -1,4 +1,5 @@
 \task{Luttis}
+\begin{refsection}
 Programming contests are one way to help students learn problem solving and programming. The idea is that assignments are handed out to the participants who solve the problem by turning in a program that executes the solution. An automated system then performs a set of tests on the program to test the validity before judging the solution as correct or incorrect.
 
 The major issue with this kind of system is that it primarily aims to inspire students that are already motivated to go further. This is mostly done by supplying scoreboards and comparisons for everyone to see, which isn't very encouraging if you did poorly.
@@ -13,8 +14,7 @@ Now, your task is to implement a contest system like this, but instead of reward
     \item If you have a scoreboard, keep it anonymous and possibly limited to showing slices around your rank. 
 \end{itemize}
 
-This is a system with %TODO
-Another thing to keep in mind is the ability to scale the system to the amount of participants. At first there may only be a single course that uses the system, but as time goes on and more courses are added
+    When implementing this system, try to keep scalability in mind. At first there may only be a single competition or course using this system at a time, but if the system becomes popular, it should absolutely be possible to increase the capacity to handle the load. Furthermore, the system can be assumed to be run by volunteers, i.e.\ contributors without pay, so while only the competition/course maintainers need to spend time keeping the system up, the code itself should be well documented and easy to navigate.
 
 \subsection{Requirements}
 To complete this assignment, you'll have to implement, on top of the regular requirements, a system that
@@ -23,4 +23,9 @@ To complete this assignment, you'll have to implement, on top of the regular req
     \item Encourages weaker students to start learning.
     \item Employs at least one of the strategies mentioned above.
 \end{itemize}
-Should you find that you want to do more
+Should you want to do more, consider
+    \begin{itemize}
+        \item Implementing administrative tools for better management.
+        \item Building a platform for managing a service-global corpus of assignments that can be used in these courses and competitions.
+    \end{itemize}
+\end{refsection}
