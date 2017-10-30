@@ -1,15 +1,23 @@
 \task{Coding Duel}
 \begin{refsection}
-According to Bartle's Taxonomy\supercite{bartle}, there are four types of players: Hearts (socializers), clubs (slayers), diamonds (achievers) and spades (explorers). If one were to implement a game for encouraging students to study more, it would take some clever design to actually reach all types. Instead, design a slayer-targeting game wherein multiple players fight it out by using code. The actual mechanics are left for you to decide, but the game should encompass 2--8 players, be based on coding and have players compete with other players.
+\fancyhead[R]{Proposal \thesection: \currentname}
+Design a slayer-targeting game wherein multiple players fight it out by using code. The actual mechanics are left for you to decide, but the game should encompass 2--8 players, be based on coding and have players compete with other players.
 
-For instance, one game could circle around code size, where the players receive a piece of documentation and are tasked with writing the smallest piece of code that satisfies the specification. Whenever a player wins a round they get a point and for every set of rounds won, they get some reward that they can use to upgrade their editor.
+%For instance, one game could circle around code size, where the players receive a piece of documentation and are tasked with writing the smallest piece of code that satisfies the specification. Whenever a player wins a round they get a point and for every set of rounds won, they get some reward that they can use to upgrade their editor.
+Some qualities that could be measured in the game may be:
+    \begin{itemize}
+        \item Size of working code (codegolf)
+        \item Time to implement working code
+        \item Average runtime of implementation
+    \end{itemize}
+Feel free to experiment and evaluate alternative metrics, but remember that testing some metrics may be more difficult than others and may require too much time to implement. Furthermore, contemplate how the game progresses; Do the players only receive feedback after submitting their answer, or is it in real-time? Are there `rounds' to avoid unfair events and penalties, such as misunderstood assignments, and if so, is there any global ranking?
 
-This assignment doesn't necessarily require great scalability per se, but the players should certainly be able to interact in real time. One could imagine that a startup would maintain the game while creating revenue from ads and donations, so there would be someone maintaining it daily.
+One possibility would be that a startup maintains the game while creating revenue from ads and donations, so there would be someone maintaining it daily. However, this requires the solution to be well-structured and maintainable. Furthermore, for such a startup to work out, there would need be a considerable amount of users playing the game, so keep that in mind while engineering your architecture.
 
 \subsection*{Requirements}
 Apart from the regular requirements, your system should
 \begin{itemize}
-    \item Implement real-time communication through standard web components.
+    \item Implement communication through standard web components.
     \item Engage players in head-to-head battles with their peers.
 \end{itemize}
 If for some reason you want to do more, you can
@@ -17,8 +25,5 @@ If for some reason you want to do more, you can
     \item Separate client communications from the server.
     \item Figure out ways to reach more types of players.
 \end{itemize}
-
-
-\printbibliography[heading=subbibliography]
 
 \end{refsection}

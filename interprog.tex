@@ -1,20 +1,24 @@
 \task{InterProg}
 \begin{refsection}
-As in task~\ref{task:Coding Duel}, Bartle's taxonomy\supercite{bartle} states that there are four kinds of players. Furthermore, it's near impossible to target all types at once, or at least its beyond the scope of the task. Therefore, in this task you're supposed to write a game for the hearts (socializers) wherein players meet and interact with other players.
+    In this task you're supposed to write a game for hearts (socializers) wherein players meet and interact with other players through code. The core of this should be centered around making people cooperate and push one another to finishing challenges. When figuring out the game mechanics, you may want to read up on some examples\supercite{wiki:socialgames} of popular social network games from which you may want to draw inspiration.
 
-The game mechanics are largely free for you to decide, but should incorporate social- and cooperative elements. One could imagine a game wherein the players are part of a company and are given software development tasks to perform. The results themselves might not even be formally evaluated, but instead showcased in a player portfolio.
+%The game mechanics are largely free for you to decide, but should incorporate social- and cooperative elements. One could imagine a game wherein the players are part of a company and are given software development tasks to perform. The results themselves might not even be formally evaluated, but instead showcased in a player portfolio.
 
-In any case, the task requires real-time interaction between multiple clients and may as such require some attention to get right. However, as with many games, it's not impossible that it could be realized as an actual product and may have some people maintaining it full-time. Furthermore, the scalability of each game is bounded by the size of the group participating, so the game itself might only need to be able to scale with more game servers. Keep this in mind when developing your solution.
+   When implementing the game, remember that you should design the challenges to teach the players how to write code. In many cases, you find yourself looking for help or solutions to specific issues and sometimes you find that your solution is good enough to help ohers. Thus, you may want to investigate the viability of various programming elements to act as motivators for your tasks, including the use the products of their work as both as solutions and as usable/collectable artifacts.
+    
+%    As with many games, it's not impossible that the end result could be realized as an actual product and may have some people maintaining it full-time. Furthermore, the scalability of each game is bounded by the size of the group participating, so the game itself might only need to be able to scale with more game servers. Keep this in mind when developing your solution.
 
 \subsection*{Requirements}
-Apart from the general requirements you'll need to implement
+Apart from the general requirements you'll need to implement:
 \begin{itemize}
-    \item A game wherein players socialize and cooperate to reach a common goal.
-    \item Real-time gameplay, i.e.\ an interactive experience. This doesn't necessarily mean it must have sub-second response times, but waiting should be minimized.
+    \item Game elements that feature social coding.
+    \item A game structure where users/players socialize and cooperate to help themselves.
 \end{itemize}
-Should you want to expand on the concept you may also want to
+Should you want to expand on the concept you may also want to:
 \begin{itemize}
-    \item Use WebSockets to create a seamless gaming experience.
+    \item Create some sort of group-based challenge to intertwine the users.
+    \item Make the game a real-time experience using WebSockets or similar components.
+    \item Open the service up for integration to social networks.
 \end{itemize}
 
 \printbibliography[heading=subbibliography]
